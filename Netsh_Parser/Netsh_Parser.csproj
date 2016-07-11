@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{717AEC91-E76A-47E9-AC61-C6118303AC8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Netsh_Parser</RootNamespace>
+    <AssemblyName>Netsh_Parser</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Network and Share Center.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutWin.Designer.cs">
+      <DependentUpon>AboutWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdHocManagerWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdHocManagerWin.Designer.cs">
+      <DependentUpon>AdHocManagerWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdHocSelectionScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdHocSelectionScreen.Designer.cs">
+      <DependentUpon>AdHocSelectionScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectAdHocNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectAdHocNetwork.Designer.cs">
+      <DependentUpon>ConnectAdHocNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectInfrastructureNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectInfrastructureNetwork.Designer.cs">
+      <DependentUpon>ConnectInfrastructureNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionStatus.Designer.cs">
+      <DependentUpon>ConnectionStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAdHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAdHoc.Designer.cs">
+      <DependentUpon>CreateAdHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAdHocManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAdHocManager.Designer.cs">
+      <DependentUpon>CreateAdHocManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrModeWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrModeWin.Designer.cs">
+      <DependentUpon>CurrModeWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrWifiWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrWifiWin.Designer.cs">
+      <DependentUpon>CurrWifiWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorBox.Designer.cs">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportProfileWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportProfileWin.Designer.cs">
+      <DependentUpon>ImportProfileWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceSelection.Designer.cs">
+      <DependentUpon>InterfaceSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainWin.Designer.cs">
+      <DependentUpon>mainWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualAdHocConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualAdHocConnect.Designer.cs">
+      <DependentUpon>ManualAdHocConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkDetailsWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkDetailsWin.Designer.cs">
+      <DependentUpon>NetworkDetailsWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleRunProgress.cs" />
+    <Compile Include="ShowPassWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPassWin.Designer.cs">
+      <DependentUpon>ShowPassWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowWlanAllWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowWlanAllWin.Designer.cs">
+      <DependentUpon>ShowWlanAllWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowWlanDriversWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowWlanDriversWin.Designer.cs">
+      <DependentUpon>ShowWlanDriversWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowWlanIntWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowWlanIntWin.Designer.cs">
+      <DependentUpon>ShowWlanIntWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignalStrAnalyser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignalStrAnalyser.Designer.cs">
+      <DependentUpon>SignalStrAnalyser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutWin.resx">
+      <DependentUpon>AboutWin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdHocManagerWin.resx">
+      <DependentUpon>AdHocManagerWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdHocSelectionScreen.resx">
+      <DependentUpon>AdHocSelectionScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectAdHocNetwork.resx">
+      <DependentUpon>ConnectAdHocNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectInfrastructureNetwork.resx">
+      <DependentUpon>ConnectInfrastructureNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionStatus.resx">
+      <DependentUpon>ConnectionStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAdHoc.resx">
+      <DependentUpon>CreateAdHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAdHocManager.resx">
+      <DependentUpon>CreateAdHocManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrModeWin.resx">
+      <DependentUpon>CurrModeWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrWifiWin.resx">
+      <DependentUpon>CurrWifiWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorBox.resx">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportProfileWin.resx">
+      <DependentUpon>ImportProfileWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceSelection.resx">
+      <DependentUpon>InterfaceSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainWin.resx">
+      <DependentUpon>mainWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualAdHocConnect.resx">
+      <DependentUpon>ManualAdHocConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkDetailsWin.resx">
+      <DependentUpon>NetworkDetailsWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShowPassWin.resx">
+      <DependentUpon>ShowPassWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowWlanAllWin.resx">
+      <DependentUpon>ShowWlanAllWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowWlanDriversWin.resx">
+      <DependentUpon>ShowWlanDriversWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowWlanIntWin.resx">
+      <DependentUpon>ShowWlanIntWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignalStrAnalyser.resx">
+      <DependentUpon>SignalStrAnalyser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Network and Share Center.ico" />
+    <None Include="Resources\Network and Share Center.png" />
+    <None Include="Resources\Network and Share Center.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

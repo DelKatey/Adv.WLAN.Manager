@@ -4,7 +4,7 @@ Not migrating to Windows 10 for fear of privacy issues, software instabality, po
 
 This program has been made specifically for Windows 8/8.1, but is also compatible with Windows 7 and Windows 10 (with the right .NET Framework installed). Of course, that is if you compile the code unmodified.
 
-## Motivation
+## How this program came to be
 
 The ability or lack thereof to remove saved wireless networks were quite a bane in Windows 8 and Windows 8.1, especially if you had changed the SSID, or if you needed to remove a saved network or two for security reasons, or just because you felt like it.
 

@@ -16,6 +16,10 @@ After some research, I had found out most of these commands, but felt like there
 
 This was coded in C#, .NET Framework 3.5, with Visual Studio 2010. This repository contains the complete files that constitutes a working version of the program.
 
+![.NET Framework 3.5](https://public-dm2306.files.1drv.com/y3pXtgOa3VAq1KJC17mOmtDEPHusKHAB9-7yuC54hI8Y09iMHkj7cSTqPzm-c2hu7OPOEI-ixow1bGvhOElUZRiFtFmgt8BNExvufrWkuXzyzmYY1WE-v_-1nYVuGdbqrPq/NET-Frmwrk_h_rgb.png?rdrts=142979546)
+
+Lack .NET Framework 3.5? Download it [here](https://www.microsoft.com/en-us/download/details.aspx?id=21)!
+
 ## License
 
 This project is licensed under the [GNU General Public License v3](LICENSE.md).
